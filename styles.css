@@ -1,8 +1,5 @@
 body {
     font-family: "Roboto", sans-serif;
-}
-
-* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -45,7 +42,7 @@ body {
 
 .main-content {
     display: flex;
-    padding: 100px 0;
+    padding: 0 0 100px 0;
     justify-content: space-between;
     width: 100%;
 }
@@ -87,23 +84,39 @@ body {
 /*info--style*/
 .info-container {
     display: flex;
-    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 0 15%;
+    align-items: center;
+}
+
+.info-row {
+    display: flex;
     flex-direction: row;
+    gap: 50px;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #3882F6;
+    border-radius: 8px;
 }
 
 .quote-container {
     background: #e5e7eb;
     display: flex;
-    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 0 15%;
 }
 
 .sign_up-container {
     display: flex;
-    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 0 15%;
 }
 
 .footer-container {
     background: #1F2937;
-    display: flex;
-    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 0 15%;
 }
