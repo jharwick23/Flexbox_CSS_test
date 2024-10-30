@@ -1,77 +1,87 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font: Roboto;
+body {
+    font-family: "Roboto", sans-serif;
 }
 
-.header-container, .footer-container {
-    background: #1F2937;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*header--style*/
+.header-container {
     display: flex;
-    flex: 1 1 auto;
+    flex-direction: column;
+    background: #1F2937;
+    align-items: center;
+    padding: 0 15%
+}
+
+.second-header-container, .main-content {
+    display: flex;;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
 }
 
 .second-header-container {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 50px;
 }
 
-.header-logo{
-    display: flex;
+.header-logo {
     font-size: 24px;
     color: #F9FAF8;
 }
 
-.header-navigation {
+.nav {
     display: flex;
-    gap: 20px;
-    flex-direction: row;
+    gap: 25px;
 }
 
 .header-link {
     font-size: 18px;
-    color:#e5e7eb;
+    color: #e5e7eb;
 }
 
 .main-content {
     display: flex;
-    flex-direction: row;
+    padding: 100px 0;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.text-content {
-    display: flex;
-    margin-right: 25px;
-    flex-direction: column;
-    flex: 1;
-}
-
-.main-title {
-    display: flex;
-    font-weight: 900;
-    font-size: 36px;
-    color: #F9FAF8;
-}
-
-.body-paragraph {
-    display: flex;
-    color:#F9FAF8;
+.image-content img {
+    width: 400px;
+    height: auto;
 }
 
 .image-content {
     display: flex;
-    flex: 1;
-    height: 250px;
-    width: 250px;
+    justify-content: flex-end;
 }
 
-.header-container {
-    flex-direction: column;
-    padding-top: 25px;
-    padding-bottom: 50px;
-    padding-left: 65px;
-    padding-right: 65px;
+.text-content {
+    max-width: 50%;
+}
+
+.main-title {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.body-paragraph {
+    font-size: 24px;
+    color:#F9FAF8;
+    margin-bottom: 10px;
+}
+
+.sign-up-button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 5px 30px;
+    border-radius: 5px;
+    border: none;
 }
 
 .info-container {
@@ -91,3 +101,8 @@
     flex: 1 1 auto;
 }
 
+.footer-container {
+    background: #1F2937;
+    display: flex;
+    flex: 1 1 auto;
+}
