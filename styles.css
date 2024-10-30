@@ -11,7 +11,8 @@ body {
     flex-direction: column;
     background: #1F2937;
     align-items: center;
-    padding: 0 15%
+    padding: 0 15%;
+    height: 700px;
 }
 
 .second-header-container, .main-content {
@@ -87,6 +88,8 @@ body {
     flex-direction: column;
     padding: 0 15%;
     align-items: center;
+    height: 500px;
+    justify-content: space-evenly;
 }
 
 .info-row {
@@ -102,21 +105,43 @@ body {
     border-radius: 8px;
 }
 
+/*quote--style*/
 .quote-container {
     background: #e5e7eb;
     display: flex;
     flex-direction: column;
     padding: 0 15%;
+    align-items: center;
+    height: 500px;
+    justify-content: center;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    width: 100%;
+    margin: 0;
+}
+
+.author {
+    display: flex;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 900;
+    justify-content: flex-end;
 }
 
 .sign_up-container {
     display: flex;
     flex-direction: column;
     padding: 0 15%;
+    align-items: center;
 }
 
 .footer-container {
     background: #1F2937;
     flex-direction: column;
     padding: 0 15%;
+    align-items: center;
 }
